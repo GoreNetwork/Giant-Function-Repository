@@ -1,3 +1,4 @@
+#Base functions that I use a lot: This gets imported into most of my programs
 import os
 import re
 import socket
