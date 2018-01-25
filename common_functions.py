@@ -76,3 +76,6 @@ def pull_dns_from_ip(input):
 	print (input)
 	nslookup = socket.getfqdn(str(input))
 	return nslookup
+
+def run_command (net_connect, command):
+	return net_connect.send_command_expect(command)
