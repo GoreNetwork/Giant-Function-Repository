@@ -1,3 +1,5 @@
+#Swap between CIDER/SNM/WCM
+
 def snm_to_cider(snm):
 	for line in cider_map:
 		if line[1] == snm:
