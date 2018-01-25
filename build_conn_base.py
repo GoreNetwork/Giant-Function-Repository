@@ -1,3 +1,5 @@
+#Everything you need to read in a list of IPs, and pull the username/password
+
 from common_functions import *
 from getpass import getpass
 
