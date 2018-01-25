@@ -29,6 +29,7 @@ def pull_run(ip,username,password,file_name):
 	to_doc_w (file_name, net_connect.send_command_expect('show run'))
 	net_connect.disconnect()
 
+#Find the port on a switch with the default gateway on it	
 def get_main_uplink(ip,username,password):
 	net_connect = make_connection (ip,username,password)
 	try:
@@ -53,6 +54,7 @@ def pull_run_int(ip,username,password,interface):
 	command = "show run int "+interface
 	int_config = net_connect.send_command_expect(command)
 	return int_config
+
 
 def pull_switch_int_info(show_run_file):
 	all_interfaces = []
