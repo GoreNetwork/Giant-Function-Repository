@@ -70,3 +70,9 @@ def remove_start(line,remove_this):
 	line_search = re.search(remove_this,line)
 	line = line[line_search.end():]
 	return line
+
+#NSlookup IP to get FQDN	
+def pull_dns_from_ip(input):
+	print (input)
+	nslookup = socket.getfqdn(str(input))
+	return nslookup
