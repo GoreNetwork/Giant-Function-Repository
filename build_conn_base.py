@@ -1,4 +1,5 @@
-#Everything you need to read in a list of IPs, and pull the username/password
+#Everything you need to read in a list of IPs, and request the username/password
+#Just import this at the start of a program that needs to get to these IPs and the username/password
 
 from common_functions import *
 from getpass import getpass
