@@ -34,12 +34,6 @@ def to_doc_a(file_name, varable):
 	f.write(varable)
 	f.close()	
 
-#Removes "remove_this" and everything before it from a line
-def remove_start(line,remove_this):
-	line_search = re.search(remove_this,line)
-	line = line[line_search.end()+1:]
-	return line
-
 #Uses Netmiko to make a connection, trys SSH then Telnet.  If it failes it writes an error to "Issues.csv"	
 def make_connection (ip,username,password):
 	try:
@@ -64,7 +58,8 @@ def find_child_text (file, text):
 			each_obj.append(each.text)
 		all.append(each_obj)
 	return all
-	
+
+#Removes "remove_this" and everything before it from a line
 def remove_start(line,remove_this):
 	line_search = re.search(remove_this,line)
 	line = line[line_search.end():]
